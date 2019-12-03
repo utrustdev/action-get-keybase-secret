@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Fetch Keybase Secrets
         id: keybase
-        uses: ./.github/actions/get_keybase_secret
+        uses: utrustdev/action-get-keybase-secret@master
         with:
           repo: keybase://team/your_team/your_repo
           file: secrets/secret.json
