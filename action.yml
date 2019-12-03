@@ -1,0 +1,20 @@
+name: Get a file from Utrust's secrets repo on keybase
+
+inputs:
+  repo:
+    description: 'Keybase URL to the git repo'
+    required: true
+  file:
+    description: 'The file to get'
+    required: true
+
+outputs:
+  file:
+    description: 'The fetched file'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.repo }}
+    - ${{ inputs.file }}
