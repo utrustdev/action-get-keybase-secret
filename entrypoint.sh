@@ -12,6 +12,8 @@ keybase oneshot
 
 git clone $repo $HOME/secrets
 
+ls $HOME/secrets
+echo $output
 cp $HOME/secrets/$file $output
 
 echo ::set-output name=file::$output
