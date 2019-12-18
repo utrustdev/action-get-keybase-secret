@@ -14,6 +14,7 @@ git clone $repo $HOME/secrets
 
 ls $HOME/secrets
 echo $output
+cat $HOME/secrets/file
 cp $HOME/secrets/$file $output
 
 echo ::set-output name=file::$output
