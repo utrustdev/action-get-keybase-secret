@@ -2,7 +2,7 @@
 
 repo=$1
 file=$2
-output=keybase-secret-${file/\//-}
+output=${prefix}${file/\//-}
 
 export KEYBASE_ALLOW_ROOT=1
 
