@@ -1,4 +1,5 @@
-#!/bin/bash -ue
+#!/usr/bin/env bash
+set -e
 
 repo="${1}"
 file="${2}"
