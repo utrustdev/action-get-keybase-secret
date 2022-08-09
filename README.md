@@ -14,7 +14,7 @@ jobs:
         with:
           repo: keybase://team/your_team/your_repo
           file: secrets/secret.json
-          prefix: "keybase-secret-" # optional
+          prefix: "keybase-secret-" # optional (passing empty string will preserve filename)
         env:
           KEYBASE_PAPERKEY: ${{ secrets.KEYBASE_PAPERKEY }}
           KEYBASE_USERNAME: ${{ secrets.KEYBASE_USERNAME }}
