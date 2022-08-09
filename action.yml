@@ -10,7 +10,7 @@ inputs:
   prefix:
     description: 'A prefix to name the file with'
     required: false
-    default: ""
+    default: "keybase-secret-"
 
 outputs:
   file:
