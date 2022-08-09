@@ -2,7 +2,7 @@
 
 repo="${1}"
 file="${2}"
-prefix="${3:keybase-secret-}"
+prefix="${3:-keybase-secret-}"
 output="${prefix}${file/\//-}"
 
 export KEYBASE_ALLOW_ROOT=1
