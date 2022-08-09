@@ -2,6 +2,7 @@
 
 repo=$1
 file=$2
+prefix=$3
 output=${prefix}${file/\//-}
 
 export KEYBASE_ALLOW_ROOT=1
