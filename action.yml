@@ -7,6 +7,10 @@ inputs:
   file:
     description: 'The file to get'
     required: true
+  prefix:
+    description: 'A prefix to name the file with'
+    required: false
+    default: "keybase-secret-"
 
 outputs:
   file:
@@ -18,3 +22,4 @@ runs:
   args:
     - ${{ inputs.repo }}
     - ${{ inputs.file }}
+    - ${{ inputs.prefix }}

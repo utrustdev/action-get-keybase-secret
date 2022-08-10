@@ -1,8 +1,10 @@
-#!/bin/bash -ue
+#!/usr/bin/env bash
+set -e
 
-repo=$1
-file=$2
-output=keybase-secret-${file/\//-}
+repo="${1}"
+file="${2}"
+prefix="${3:keybase-secret-}"
+output="${prefix}${file/\//-}"
 
 export KEYBASE_ALLOW_ROOT=1
 
@@ -12,6 +14,6 @@ keybase oneshot
 
 git clone $repo $HOME/secrets
 
-cp $HOME/secrets/$file $output
+cp "${HOME}/secrets/${file}" "${output}"
 
 echo ::set-output name=file::$output
