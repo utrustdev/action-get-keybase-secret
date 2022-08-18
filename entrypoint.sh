@@ -12,7 +12,7 @@ run_keybase
 sleep 5
 keybase oneshot
 
-git clone "$repo" "$HOME/secrets"
+git -c "$HOME/secrets" clone "$repo" "$file"
 
 cp "$HOME/secrets/$file" "${output}"
 
