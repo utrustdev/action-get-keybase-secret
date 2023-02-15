@@ -4,14 +4,10 @@ repo=$1
 file=$2
 output=keybase-secret-${file/\//-}
 
-export KEYBASE_ALLOW_ROOT=1
-
-run_keybase
-sleep 5
-keybase oneshot
+export KEYBASE_SERVICE=1
 
 git clone $repo $HOME/secrets
 
 cp $HOME/secrets/$file $output
 
-echo ::set-output name=file::$output
+echo "file=${output}" >> $GITHUB_OUTPUT

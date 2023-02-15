@@ -1,4 +1,4 @@
-FROM naps62/keybase:2019-11-26
+FROM keybaseio/client:stable-alpine
 
 COPY entrypoint.sh /entrypoint.sh
 
