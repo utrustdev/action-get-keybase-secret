@@ -4,7 +4,9 @@ repo=$1
 file=$2
 output=keybase-secret-${file/\//-}
 
-export KEYBASE_SERVICE=1
+export KEYBASE_ALLOW_ROOT=1
+
+keybase oneshot
 
 git clone $repo $HOME/secrets
 
