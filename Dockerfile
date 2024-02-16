@@ -1,4 +1,4 @@
-FROM keybaseio/client:6.2.4-20240101013525-ae7e4a1c15-alpine
+FROM keybaseio/client:6.2.5-20240101050825+3bdf76f84a-alpine
 
 RUN apk add git
 
